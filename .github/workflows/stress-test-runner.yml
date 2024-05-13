@@ -11,22 +11,22 @@ on:
         type: string
         required: true
       num_worker:
-        default: 2
+        default: 1
         description: spawn N workers spinning on malloc()/free()
         type: number
         required: true
       num_runner:
-        default: 2
+        default: 20
         description: spawn N of github-runner at the same time
         type: number
         required: true
       mem_usage:
-        default: 128M
+        default: 16M
         description: malloc B bytes per vm worker
         type: string
         required: true
       timeout:
-        default: 60s
+        default: 10s
         description: timeout after N seconds
         type: string
         required: true
